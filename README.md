@@ -6,7 +6,7 @@ Declaración de una clase abstracta Figura:
     -Crearemos las subclases Rectangulo, Triangulo y Circulo que extienden de Figura e implementan el método calcularArea().
     -Mostramos los resultados por pantalla.
    
-## 2) Implementaremos una interface Figura con un método obtenerArea():
+## 2) Implementaremos una interface Figura con un método obtenerPerimetro():
     -Crearemos una interfaz Figura con un método obtenerArea().
     -Las clases Circulo y Rectangulo implementan esta interfaz y el método correspondiente.
     -Crearemos varias instancias de diferentes figuras y las agregamos a una lista.
@@ -14,7 +14,7 @@ Declaración de una clase abstracta Figura:
 
 ## 3) Desarrollo de algoritmos para calcular el área de polígonos:
 
-    -Creamos clases para representar los polígonos Cuadrado y Circulo.
+    -Creamos clases para representar los polígonos Cuadrado y Pentágono.
     -Implementaremos métodos para imprimir el polígono, multiplicar área y sumar área.
     -Mantenemos la responsabilidad de cada clase (Principio de Responsabilidad única)
 
