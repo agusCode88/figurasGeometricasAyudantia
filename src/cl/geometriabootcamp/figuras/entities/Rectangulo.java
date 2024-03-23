@@ -1,19 +1,22 @@
-package cl.geometriabootcamp.controller.entities;
+package cl.geometriabootcamp.figuras.entities;
 
-import cl.geometriabootcamp.controller.Figura;
+import cl.geometriabootcamp.controller.FiguraGeometrica;
+import cl.geometriabootcamp.figuras.interfaces.FiguraInterface;
 
-public class Rectangulo extends Figura {
+public class Rectangulo extends FiguraGeometrica  {
 
     /**
      * 1) Atributos de una clase
      *    - variables o constantes
      *    - modificadores de acceso
       */
-
+    protected String nombreFigura;
     protected double largoRectangulo;
     protected double anchoRectangulo;
 
     protected double areaRectangulo;
+
+    protected  double perimetroRectangulo;
 
     /**
      * 2) Constructor o constructores de una clase
@@ -23,6 +26,14 @@ public class Rectangulo extends Figura {
     public Rectangulo(double largoRectangulo, double anchoRectangulo) {
         this.largoRectangulo = largoRectangulo;
         this.anchoRectangulo = anchoRectangulo;
+    }
+
+    public String getNombreFigura() {
+        return nombreFigura;
+    }
+
+    public void setNombreFigura(String nombreFigura) {
+        this.nombreFigura = nombreFigura;
     }
 
     /**
@@ -59,11 +70,14 @@ public class Rectangulo extends Figura {
      */
 
     @Override
-    public void calcularArea() {
-        this.areaRectangulo = this.anchoRectangulo * this.largoRectangulo;
-        System.out.println("El área del rectángulo es: " + getAreaRectangulo() );
+    public double calcularArea() {
+        return this.anchoRectangulo * this.largoRectangulo;
     }
 
+    @Override
+    public double obtenerPerimetro() {
+        return 0;
+    }
     /**
      * 5) Métodos específicos de una clase
      *   - Funcionalidades específicas de la clase.
